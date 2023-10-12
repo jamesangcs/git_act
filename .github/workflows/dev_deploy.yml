@@ -12,8 +12,9 @@ jobs:
         steps:
             - uses: actions/checkout@v2
             - name: hello world step name
-              run: echo "hello world"
-              run: echo "This repo is ${{ github.repository }}"
+              run: |
+                echo "hello world"
+                echo "This repo is ${{ github.repository }}"
     goodbye_jobname:
         runs-on: windows-latest
         steps:
