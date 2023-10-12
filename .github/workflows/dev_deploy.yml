@@ -15,7 +15,7 @@ jobs:
               run: |
                 echo "hello world"
                 echo "This repo is ${{ github.repository }}"
-                echo "This event is ${{ github.event }}"
+                echo "This event is ${{ toJson(github.event) }}"
     goodbye_jobname:
         runs-on: windows-latest
         steps:
