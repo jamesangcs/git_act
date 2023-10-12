@@ -3,6 +3,9 @@ name: Create comment on new issues
 on:
     issues:
         types: [opened]
+    push:
+        branches:
+            - dev
 
 jobs:
     comment-with-action:
