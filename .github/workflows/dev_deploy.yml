@@ -15,3 +15,8 @@ jobs:
             - uses: actions/checkout@v2
             - name: hello world
               run: echo "hello world"
+    goodbye:
+        runs-on: windows-latest
+        steps:
+            - name: goodbye world
+              run: echo "bye world"
