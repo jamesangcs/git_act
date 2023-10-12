@@ -1,0 +1,23 @@
+name: Hello World workflow
+
+on:
+    push:
+        branches:
+            - dev
+    workflow_dispatch:
+
+jobs:
+    hello_jobname:
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v2
+            - name: hello world step name
+              run: |
+                echo "hello world"
+                echo "This repo is ${{ github.repository }}"
+    goodbye_jobname:
+        runs-on: windows-latest
+        steps:
+            - name: goodbye world step name
+              run: |
+                echo "bye world"
