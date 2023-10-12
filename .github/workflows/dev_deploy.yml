@@ -19,4 +19,5 @@ jobs:
         runs-on: windows-latest
         steps:
             - name: goodbye world step name
-              run: echo "bye world"
+              run: |
+                echo "bye world"
