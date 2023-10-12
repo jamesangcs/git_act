@@ -10,14 +10,14 @@ on:
     workflow_dispatch:
 
 jobs:
-    hello:
+    hello job name:
         runs-on: ubuntu-latest
         steps:
             - uses: actions/checkout@v2
-            - name: hello world
+            - name: hello world step name
               run: echo "hello world"
-    goodbye:
+    goodbye job name:
         runs-on: windows-latest
         steps:
-            - name: goodbye world
+            - name: goodbye world step name
               run: echo "bye world"
