@@ -18,3 +18,6 @@
 # git push origin -d v1.0
 
 # we cannot checkout tags in git
+
+# create tag for past commits
+# git tag v1.3 5fg
