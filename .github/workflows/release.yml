@@ -21,12 +21,6 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          python -m pip install poetry
-
-      - name: Update version and build
-        run: |
-          poetry version patch  # or 'minor' or 'major' depending on your versioning strategy
-          python -m build
 
       - name: Create GitHub Release
         uses: softprops/action-gh-release@v1
